@@ -9,18 +9,21 @@ TOKENKEY = <normal_key> </br>
 PORT=<your_preferred_port> </br>
 
 ### Tickets array
-[</br>
-  [</br>
-    [0,18,23,40,48,0,0,73,0],</br>
-    [5,0,0,0,42,52,0,80,83],</br>
-    [0,20,0,0,49,58,65,0,85]</br>
-  ],</br>
-  [</br>
-    [10,0,21,34,0,0,65,0,83],</br>
-    [0,11,0,36,41,0,62,0,85],</br>
-    [0,19,26,37,43,0,67,0,0]</br>
-  ]</br>
-]</br>
+```Javascript
+[
+  [
+    [0,18,23,40,48,0,0,73,0],
+    [5,0,0,0,42,52,0,80,83],
+    [0,20,0,0,49,58,65,0,85]
+  ],
+  [
+    [10,0,21,34,0,0,65,0,83],
+    [0,11,0,36,41,0,62,0,85],
+    [0,19,26,37,43,0,67,0,0]
+  ]
+]
+
+```
 
 ### Rules
 A ticket consists of a random distribution of 15 numbers between 1-90 in a 3x9 grid </br>
@@ -36,30 +39,36 @@ RULE #4 - Each column must have at least 1 number</br>
 Route: auth/register</br>
 Method: POST</br>
 Request Body:</br>
-{</br>
-  "username":"Rama",</br>
-  "email":"rama@gmail.com",</br>
-  "password":"Ram@12345"</br>
-}</br>
+```Javascript
+{
+  "username":"Rama",
+  "email":"rama@gmail.com",
+  "password":"Ram@12345"
+}
+```
 
 ## User Login:
 
 Route: auth/login</br>
 Method: POST</br>
 Request Body:</br>
-{</br>
-  "username":"Rama",</br>
-  "password":"Ram@12345"</br>
-}</br>
+```Javascript
+{
+  "username":"Rama",
+  "password":"Ram@12345"
+}
+```
 
 ## Create Tickets:
 
 Route: /tickets/create </br>
 Method: POST </br>
 Request Body:</br>
-{</br>
-    count:2,</br>
-}</br>
+```Javascript
+{
+    count:2,
+}
+```
 
 ## Get Ticket by ID:
 
